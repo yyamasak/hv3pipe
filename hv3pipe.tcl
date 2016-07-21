@@ -1,9 +1,5 @@
 fconfigure stdin -encoding [encoding system] -translation binary
-set pipe_html_raw [read stdin]
-
-set pipe_html [string map {{<span style="height:1px;overflow-y:hidden">.</span>} {&nbsp;}} $pipe_html_raw]
-
-package require hv3
+set pipe_html [read stdin]
 
 proc tclvar_requestcmd {R} {
 	# Get the URI from the request handle. The URI should look 
@@ -17,9 +13,15 @@ proc tclvar_requestcmd {R} {
 	set var [string range $uri 10 end]
 	
 	# Return the data in the global variable $var to the widget.
-	global $var
-	$R finish [set $var]
+	if {$var eq "pipe_html"} {
+		global $var
+		$R finish [set $var]
+	} else {
+		puts "uri=$uri"
+	}
 }
+
+package require hv3
 
 ::hv3::hv3 .hv3
 bind all <MouseWheel> {.hv3.widget yview scroll [expr {-(%D/abs(%D)) * 4}] units}
