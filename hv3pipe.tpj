@@ -1,0 +1,47 @@
+format  {TclDevKit Project File}
+fmtver  2.0
+fmttool {TclDevKit TclApp} 5.4
+
+##  Saved at : Thu Jul 21 17:06:09 +0900 2016
+##  By       : yusuke@yusuke-t440p
+
+########
+#####
+###
+##
+#
+
+App/Code               {}
+App/Package            {}
+App/PostCode           {}
+Metadata               {}
+OSX/Info.plist         {}
+Path                   {Relativeto .}
+Path                   {File ./hv3pipe.tcl}
+Path                   Startup
+Pkg/Architecture       win32-ix86
+Pkg/Reference          {Tkhtml 3.0}
+Pkg/Reference          {hv3 0.1}
+Pkg/Reference          {snit 2.3.2}
+StringInfo             {Language 0409 CodePage 04b0 FileDescription Hv3Pipe CompanyName {} OriginalFilename hv3pipe.exe FileVersion 0.1.0.0 LegalCopyright {2016- Y.Yamasaki} ProductName HV3Pipe ProductVersion 0.1.0.0}
+System/Nocompress      0
+System/TempDir         {}
+System/Verbose         0
+Wrap/Compile/NoTbcload 0
+Wrap/Compile/Tcl       0
+Wrap/Compile/Version   {}
+Wrap/FSMode            {}
+Wrap/Icon              {}
+Wrap/InputPrefix       C:/Tcl/bin/tclkit-gui-8605.exe
+Wrap/Interpreter       {}
+Wrap/Merge             0
+Wrap/NoProvided        0
+Wrap/NoSpecials        0
+Wrap/Output            ./hv3pipe.exe
+Wrap/Output/OSXApp     0
+
+#
+##
+###
+#####
+########
