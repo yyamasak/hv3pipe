@@ -2,7 +2,7 @@ format  {TclDevKit Project File}
 fmtver  2.0
 fmttool {TclDevKit TclApp} 5.4
 
-##  Saved at : Thu Apr 22 17:51:17 JST 2021
+##  Saved at : Thu Apr 22 17:29:04 JST 2021
 ##  By       : yusuke@yusuke-x1ext2
 
 ########
@@ -17,13 +17,13 @@ App/PostCode           {}
 Metadata               {}
 OSX/Info.plist         {}
 Path                   {Relativeto .}
-Path                   {File ./hv3pipe.tcl}
+Path                   {File ./hv3open.tcl}
 Path                   Startup
 Pkg/Architecture       win32-ix86
 Pkg/Reference          {Tkhtml 3.0}
 Pkg/Reference          {hv3 0.1}
 Pkg/Reference          {snit 2.3.2}
-StringInfo             {Language 0409 CodePage 04b0 FileDescription {Render pipe input as HTML in a window} CompanyName {} OriginalFilename hv3pipe.exe LegalCopyright {2016- Y.Yamasaki} FileVersion 1.0.0.0 ProductName hv3pipe ProductVersion 1.0.0.0}
+StringInfo             {Language 0409 CodePage 04b0 FileDescription {Open HTML file in HV3} CompanyName {} OriginalFilename hv3open.exe LegalCopyright {2021- Y.Yamasaki} FileVersion 1.0.0.0 ProductName hv3open ProductVersion 1.0.0.0}
 System/Nocompress      0
 System/TempDir         {}
 System/Verbose         0
@@ -37,7 +37,7 @@ Wrap/Interpreter       {}
 Wrap/Merge             0
 Wrap/NoProvided        0
 Wrap/NoSpecials        0
-Wrap/Output            ./hv3pipe.exe
+Wrap/Output            ./hv3open.exe
 Wrap/Output/OSXApp     0
 
 #

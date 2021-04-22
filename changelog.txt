@@ -1,4 +1,11 @@
 
+2021-04-22  Yusuke Yamasaki  <yusuke.yamasaki@iasinc.jp>
+
+	* 1.0.0.0: 
+	- new: Updated Tcl/Tk from 8.6.5 to 8.6.11.
+	- new: Added hv3open.tcl which renders an HTML file given as the first command line argument.
+
+
 2016-07-21  Yusuke Yamasaki  <yusuke.yamasaki@iasinc.jp>
 
 	* 0.1.1.0: 

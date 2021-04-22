@@ -1,5 +1,11 @@
-fconfigure stdin -encoding [encoding system] -translation binary
-set pipe_html [read stdin]
+set pipe_html {}
+set f [lindex $::argv 0]
+if {[file exists $f]} {
+	set ch [open $f r]
+	fconfigure $ch -encoding binary -translation binary
+	set pipe_html [read $ch]
+	close $ch
+}
 
 proc tclvar_requestcmd {R} {
 	# Get the URI from the request handle. The URI should look 
@@ -30,3 +36,5 @@ bind all <Shift-MouseWheel> {.hv3.widget xview scroll [expr {-(%D/abs(%D)) * 4}]
 pack .hv3 -fill both -expand true
 .hv3 configure -requestcmd tclvar_requestcmd
 .hv3 goto tclvar:///pipe_html
+
+bind all <Escape> {exit}
